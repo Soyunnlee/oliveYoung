@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Merriweather&family=Nanum+Pen+Script&family=Poppins:wght@200;300&family=Readex+Pro:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Mandali&family=Merriweather&family=Moo+Lah+Lah&family=Nanum+Pen+Script&family=Poppins:wght@300&family=Readex+Pro:wght@400;500&display=swap');
+
+/*    Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul,li { list-style: none; }
+li {float: left;}
+a { outline:0; text-decoration:none;color:rgb(95, 90, 90);}
+img { border:0;}
+
+
+/* 배경이미지 설정*/
+.warp {	position:fixed; width:100%; height:100%; min-width:1024px; min-height:768px; background:url(../image/main.jpg) no-repeat center center;
+         background-size:cover; border: 0px solid red;}
+
+/* header */
+header {position:fixed; width:700px; border:0px solid red; z-index:30;}
+header ul { padding-left: 30px;}
+header li {margin: 40px 25px ; font-weight: 600 ; font-size: 20px; font-family: 'Poppins', sans-serif; transition:all 0.3s; }
+
+/* 로고영역 */
+h1 {position: fixed ; top:300px ; left:30px }
+h1 span{ display:block ; font-size: 17px ; padding-left:20px;
+    font-family: 'Mandali', sans-serif; color: black;}
+
+/* 아이콘 영역 */
+
+.sns {position:fixed; margin-left:1700px ; margin-top: 31px ; z-index: 20;}
+.sns a {font-size: 25px ; padding: 0 14px ;  }
+
+/* 로고 , 아이콘 마우스 오버시 */
+header li:hover {transform: scale(1.2); cursor:pointer;}
+.sns li:hover {transform: scale(1.2);transition: all 0.3s;}
+
+/* main */
+
+section {position:fixed  ; width: 100%; height: 100% ; border: 0px solid red;}
+article {position: relative ; float: right ; width: 12% ; height: 100% ; 
+    border-left : 3px solid;
+    border-image: linear-gradient(to bottom, #fbfcb900, #afa9aeaa, #65d3ff00);
+    border-image-slice: 1;
+    overflow:hidden;
+   }
+
+article h2{ position: relative ; top : 400px ; left : 20px ; 
+        font-family: 'Mandali', sans-serif;font-size: 25px ; color: rgb(58, 55, 55);}
+
+article video { width: 100% ; height: 100%; opacity:0 ; margin-top:-80px; object-fit: cover;}
+
+article h3 {position:absolute;	bottom:210px;	right:-800px;	
+    font: 40px Raleway; color:#fff;	text-align:right;	
+    opacity:1;	z-index:8;	}
+article p {	position:absolute;bottom:50px; right:-310px;	
+    width:300px; height:150px;	font:12px/1.5 arial; color:#fff;	
+    text-align:right;	opacity:0.8;	z-index:5;}
+
+
+/* article 호버 효과 */
+article:hover h2 { color:#ccc ; z-index: 10;}
+article:hover div { top:270px; height:70px;}
+
+
+
+/* footer */
+footer {	position:fixed; width:100%; height:30px;
+    left:0px; bottom:0px; background:#f9f9f9;	
+    font:12px/3.3 verdana;	letter-spacing:2px;	opacity:0.4;z-index:30;overflow: hidden;}
+footer span {position:absolute; left:50px; bottom:0px; color: rgb(110, 101, 101); font-size: 3px;}
